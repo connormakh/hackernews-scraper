@@ -1,0 +1,23 @@
+{
+  "name": "hackernewsscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/hackernews",
+  "scripts": {
+    "test": "mocha -t 100000 test/api/post.js"
+  },
+  "bin": {
+    "hackernews": "./bin/hackernews"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}

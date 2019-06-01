@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const { getTopPosts } = require('../api');
+
+program
+  .version('0.1.0')
+  .option('-n, --number [count]', 'Add peppers', '50')
+  .parse(process.argv);
+
+const inputNumber = parseInt(program.number);
+if (inputNumber > 100) {
+  console.log('Number too large')
+  process.exit(1);
+}
+
+
+getTopPosts(parseInt(program.number))
+  .then(res => {
+    console.log(res);
+  })
