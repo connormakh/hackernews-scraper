@@ -7,10 +7,10 @@
 ## To run:
 
 ```bash
-$ ./bin/hackernews -n [count]
+$ ./bin/hackernews --posts [count]
 ```
 
--n refers to the top number of posts wished to be retrieved
+--posts refers to the top number of posts wished to be retrieved
 
 
 ## To test

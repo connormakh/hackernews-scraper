@@ -5,12 +5,12 @@ const { getTopPosts } = require('../api');
 
 program
   .version('0.1.0')
-  .option('-n, --number [count]', 'Add peppers', '50')
+  .option('-n, --posts [count]', 'Specify number of posts to be retrieved', '-1')
   .parse(process.argv);
 
-const inputNumber = parseInt(program.number);
-if (inputNumber > 100) {
-  console.log('Number too large')
+const inputNumber = parseInt(program.posts);
+if (inputNumber > 100 || inputNumber < 1 || Number.isNaN(inputNumber)) {
+  console.log('Invalid number, please provide a count between 1 and 100')
   process.exit(1);
 }
 
