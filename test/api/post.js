@@ -6,13 +6,12 @@ describe('post', () => {
     const resp = await getTopPosts(number);
     assert.equal(resp.length, number);
     resp.forEach(item => {
-      console.log(item)
-      assert('title' in item)
-      assert('uri' in item)
-      assert('author' in item)
-      assert('points' in item)
-      assert('comments' in item)
-      assert('rank' in item)
+      assert('title' in item);
+      assert('uri' in item);
+      assert('author' in item);
+      assert('points' in item);
+      assert('comments' in item);
+      assert('rank' in item);
     })
   });
 });

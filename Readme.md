@@ -12,3 +12,16 @@ $ ./bin/hackernews -n [count]
 
 -n refers to the top number of posts wished to be retrieved
 
+
+## To test
+
+```bash
+$ npm run test
+```
+
+
+## Libraries used
+
+- Axios: Node JS' most well known https request library
+- Commander: For enabling a Node JS application to run with a command-line like behavior
+- Mocha & Chai: Testing framework
